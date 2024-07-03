@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Navbar() {
   return (
     <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10 text-textPrimary py-5 px-6 md:px-10 shadow-lg">
