@@ -1,9 +1,9 @@
 {
+  "homepage": "https://hasitha20025.github.io/Hasitha_portfolio",
   "name": "hasitha-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://hasitha20025.github.io/Hasitha_portfolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
