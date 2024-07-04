@@ -1,7 +1,9 @@
 export default function Contact() {
   return (
     <>
-      <p>Contact</p>
+      <p className="text-3xl font-bold text-center my-6 text-textPrimary">
+        <span className="text-lightBlue">C</span>ontact
+      </p>
     </>
   );
 }
