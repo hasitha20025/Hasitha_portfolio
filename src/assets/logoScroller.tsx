@@ -9,15 +9,12 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaGitAlt } from "react-icons/fa";
 import { IoLogoFigma } from "react-icons/io5";
-import { SiJquery } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { SiPostman } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { GrDocker } from "react-icons/gr";
-import { SiXampp } from "react-icons/si";
 import { SiVite } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -26,8 +23,6 @@ import { SiNextdotjs } from "react-icons/si";
 import { FaWordpress } from "react-icons/fa6";
 import { SiDjango } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
-import { SiArduino } from "react-icons/si";
-import { SiCanva } from "react-icons/si";
 import { SiKubernetes } from "react-icons/si";
 import { FaLinux } from "react-icons/fa";
 import { SiPhp } from "react-icons/si";
@@ -57,13 +52,10 @@ const logos: JSX.Element[] = [
   <FaSquareGithub />,
   <FaGitAlt />,
   <IoLogoFigma />,
-  <SiJquery />,
-  <FaNode />,
   <AiOutlineAntDesign />,
   <SiPostman />,
   <VscVscode />,
   <GrDocker />,
-  <SiXampp />,
   <SiVite />,
   <SiMongodb />,
   <IoLogoFirebase />,
@@ -72,8 +64,6 @@ const logos: JSX.Element[] = [
   <FaWordpress />,
   <SiDjango />,
   <SiMysql />,
-  <SiArduino />,
-  <SiCanva />,
   <SiKubernetes />,
   <FaLinux />,
   <SiPhp />,
