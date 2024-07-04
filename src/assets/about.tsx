@@ -1,21 +1,26 @@
 import pic from "/public/pic.jpg";
-import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaWhatsappSquare } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaWhatsappSquare,
+  FaBehanceSquare,
+} from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
-import { FaBehanceSquare } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 
 export default function About() {
   const whatsappNumber = "+94784375524"; // Your phone number in international format
   return (
-    <>
-      <p className="text-3xl font-bold text-center my-6 text-textPrimary">
+    <div className="mx-4 md:mx-0">
+      {" "}
+      {/* Added margin for smaller screens */}
+      <p className="text-3xl font-bold text-center my-6 text-textPrimary mt-20">
         <span className="text-lightBlue">A</span>bout{" "}
         <span className="text-lightBlue">M</span>e
       </p>
-      <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center md:gap-10 mx-4 md:mx-0">
-        <div className="basis-full md:basis-1/2 flex justify-center md:justify-end mb-6 md:mb-0">
+      <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center md:gap-10">
+        <div className="md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0">
+          {" "}
+          {/* Adjusted width for smaller screens */}
           <img
             src={pic}
             alt="Hasitha Dhananjay"
@@ -25,21 +30,29 @@ export default function About() {
           />
         </div>
 
-        <div className="basis-full md:basis-1/2 text-center md:text-left my-20">
+        <div className="md:w-1/2 text-center md:text-left my-6 md:my-12">
+          {" "}
+          {/* Adjusted width for smaller screens */}
           <p className="text-2xl font-semibold mb-2 text-textPrimary">
-            I am Hasitha Dhananjay
+            I am Hasitha Dhananjaya
           </p>
           <p className="text-xl font-medium text-lightBlue mb-4">
             Full Stack Developer
           </p>
           <p className="text-base text-textSecondary">
-            As a Full Stack Developer, I specialize in creating dynamic and
-            responsive web applications. With expertise in both front-end and
-            back-end technologies, I build seamless and efficient solutions. My
-            passion lies in delivering high-quality, user-centric experiences
+            I am an undergraduate student at Uva Wellassa University of Sri
+            Lanka. As a Full Stack Developer, I specialize in creating dynamic
+            and responsive web applications. With expertise in both front-end
+            and back-end technologies, I build seamless and efficient solutions.
+            My passion lies in delivering high-quality, user-centric experiences
             that bridge the gap between design and functionality.
           </p>
-          <div className="flex text-textSecondary gap-3 mt-5 ">
+          <p className="my-3 text-lg font-semibold text-textPrimary">
+            Follow On
+          </p>
+          <div className="flex justify-center md:justify-start gap-3 text-textSecondary">
+            {" "}
+            {/* Centered links for smaller screens */}
             <a
               href="https://www.facebook.com/profile.php?id=100082554939780&mibextid=ZbWKwL"
               target="_blank"
@@ -62,16 +75,6 @@ export default function About() {
             >
               <FaWhatsappSquare className="text-2xl" />
             </a>
-
-            <a
-              href="mailto:hasitha.soft.lk@gmail.com"
-              className="hover:text-lightBlue"
-              title="Email Me"
-              target="_blank"
-            >
-              <MdEmail className="text-2xl" />
-            </a>
-
             <a
               href="https://github.com/hasitha20025"
               className="hover:text-lightBlue"
@@ -89,6 +92,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
