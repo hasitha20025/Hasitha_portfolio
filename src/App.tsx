@@ -9,24 +9,22 @@ export default function App() {
   return (
     <div className="bg-primary">
       <div className="mx-5 ">
-        <div className="">
-          <Navbar />
+        <Navbar />
+        <div className="pt-20 md:pt-20">
+          <div className="">
+            <About />
+          </div>
+          <div className="mt-10">
+            <Projects />
+          </div>
+          <div className="mt-10">
+            <Skills />
+          </div>
+          <div className="">
+            <Contact />
+          </div>
         </div>
-        <div className="">
-          <About />
-        </div>
-        <div className="mt-10">
-          <Projects />
-        </div>
-        <div className="mt-10">
-          <Skills />
-        </div>
-        <div className="">
-          <Contact />
-        </div>
-        <div className="">
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </div>
   );

@@ -10,12 +10,11 @@ import { SiGithub } from "react-icons/si";
 export default function About() {
   const whatsappNumber = "+94784375524"; // Your phone number in international format
   return (
-    <div className="mx-4 md:mx-0">
-      {" "}
+    <div className="mx-4 md:mx-0 ">
       {/* Added margin for smaller screens */}
-      <p className="text-3xl font-bold text-center my-6 text-textPrimary mt-20">
-        <span className="text-lightBlue">A</span>bout{" "}
-        <span className="text-lightBlue">M</span>e
+      <p className="text-3xl font-bold text-center my-6 text-textPrimary mt-5">
+        <span className="text-lightBlue">A</span>bout
+        <span className="text-lightBlue pl-2">M</span>e
       </p>
       <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center md:gap-10">
         <div className="md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0">
@@ -39,7 +38,7 @@ export default function About() {
           <p className="text-xl font-medium text-lightBlue mb-4">
             Full Stack Developer
           </p>
-          <p className="text-base text-textSecondary">
+          <p className="text-base text-justify text-textSecondary">
             I am an undergraduate student at Uva Wellassa University of Sri
             Lanka. As a Full Stack Developer, I specialize in creating dynamic
             and responsive web applications. With expertise in both front-end

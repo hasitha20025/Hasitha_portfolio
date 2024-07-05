@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="p-8 bg-dark text-textPrimary">
       <div className="text-center mb-10">
         {/* <h2 className="text-xl font-bold">Let's Talk Now</h2> */}
-        <p className="text-3xl font-bold text-center my-3 text-textPrimary mt-20">
+        <p className="text-3xl font-bold text-center my-3 text-textPrimary mt-10">
           <span className="text-lightBlue">L</span>et's Talk
           <span className="text-lightBlue ml-2">Now</span>
         </p>
