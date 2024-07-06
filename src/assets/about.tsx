@@ -38,12 +38,12 @@ export default function About() {
           <p className="text-xl font-medium text-lightBlue mb-4">
             Full Stack Developer
           </p>
-          <p className="text-base text-justify text-textSecondary">
-            I am an undergraduate student at Uva Wellassa University of Sri
-            Lanka. As a Full Stack Developer, I specialize in creating dynamic
-            and responsive web applications. With expertise in both front-end
-            and back-end technologies, I build seamless and efficient solutions.
-            My passion lies in delivering high-quality, user-centric experiences
+          <p className="text-base text-justify text-textPrimary ">
+            I am an graduate student at Uva Wellassa University of Sri Lanka. As
+            a Full Stack Developer, I specialize in creating dynamic and
+            responsive web applications. With expertise in both front-end and
+            back-end technologies, I build seamless and efficient solutions. My
+            passion lies in delivering high-quality, user-centric experiences
             that bridge the gap between design and functionality.
           </p>
           <p className="my-3 text-lg font-semibold text-textPrimary">

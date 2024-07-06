@@ -12,16 +12,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
 }) => {
   return (
-    <div className="bg-primary text-textPrimary p-6 rounded-lg shadow-lg border-2 border-secondary">
+    <div className="bg-gray-900 text-textPrimary p-6 rounded-lg shadow-lg ">
       <div className="flex justify-between items-center mb-2">
         <a href={links} className="" target="_blank" rel="noopener noreferrer">
           <h2 className="text-xl font-bold text-textPrimary hover:text-textSecondary">
             {projectName}
           </h2>
         </a>
-        <span className="text-textSecondary">{date}</span>
+        <span className="text-textSecondary text-sm">{date}</span>
       </div>
-      <p className="text-textSecondary">{description}</p>
+      <p className="text-textSecondary text-sm">{description}</p>
     </div>
   );
 };

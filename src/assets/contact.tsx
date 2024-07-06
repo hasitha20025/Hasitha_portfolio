@@ -16,7 +16,7 @@ const Contact = () => {
           <h3 className="text-3xl font-bold mb-4">
             Do You Have A Project In Your Mind?
           </h3>
-          <p className="mb-8">
+          <p className="mb-8 text-sm">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form.
           </p>

@@ -12,9 +12,9 @@ export default function Projects() {
       </p>
 
       <StatsCard />
-      <div className="flex flex-col lg:flex-row">
-        <div className="container mx-auto p-4 my-5">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+      <div className="flex flex-col lg:flex-row mt-5">
+        <div className="container p-4 my-5 mx-auto ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 ">
             <ProjectCard
               projectName="Travel_SriLanka"
               date="January 2022"
