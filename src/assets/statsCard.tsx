@@ -10,7 +10,7 @@ export default function StatsCard() {
         <p className="text-xl mt-2 text-textPrimary">Projects Completed</p>
       </div>
       <div className="text-center">
-        <p className="text-4xl font-bold text-textPrimary">3</p>
+        <p className="text-4xl font-bold text-textPrimary">1</p>
         <p className="text-xl mt-2 text-textPrimary">Years of Experience</p>
       </div>
     </div>

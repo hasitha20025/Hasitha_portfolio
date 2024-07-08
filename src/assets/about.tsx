@@ -1,11 +1,13 @@
 import pic from "/public/pic.jpg";
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaGithub } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
 import {
-  FaFacebook,
   FaLinkedin,
-  FaWhatsappSquare,
   FaBehanceSquare,
 } from "react-icons/fa";
-import { SiGithub } from "react-icons/si";
+
 
 export default function About() {
   const whatsappNumber = "+94784375524"; // Your phone number in international format
@@ -39,12 +41,7 @@ export default function About() {
             Full Stack Developer
           </p>
           <p className="text-base text-justify text-textPrimary ">
-            I am an graduate student at Uva Wellassa University of Sri Lanka. As
-            a Full Stack Developer, I specialize in creating dynamic and
-            responsive web applications. With expertise in both front-end and
-            back-end technologies, I build seamless and efficient solutions. My
-            passion lies in delivering high-quality, user-centric experiences
-            that bridge the gap between design and functionality.
+          I am a graduate student at Uva Wellassa University of Sri Lanka. As a Full Stack Developer, I specialize in creating dynamic and responsive web applications. With expertise in both front-end and back-end technologies, I build seamless and efficient solutions. My passion lies in delivering high-quality, user-centric experiences that bridge the gap between design and functionality.
           </p>
           <p className="my-3 text-lg font-semibold text-textPrimary">
             Follow On
@@ -57,7 +54,8 @@ export default function About() {
               target="_blank"
               className="hover:text-lightBlue"
             >
-              <FaFacebook className="text-2xl" />
+              <FaFacebook className="text-2xl"  />
+              
             </a>
             <a
               href="https://www.linkedin.com/in/hasitha-dhananjaya-337baa226/"
@@ -72,14 +70,15 @@ export default function About() {
               rel="noopener noreferrer"
               className="hover:text-lightBlue"
             >
-              <FaWhatsappSquare className="text-2xl" />
+              <IoLogoWhatsapp className="text-2xl" />
             </a>
             <a
               href="https://github.com/hasitha20025"
               className="hover:text-lightBlue"
               target="_blank"
             >
-              <SiGithub className="text-2xl" />
+              <FaGithub className="text-2xl" />
+              
             </a>
             <a
               href="https://www.behance.net/hasithadhananj2"
@@ -87,6 +86,13 @@ export default function About() {
               target="_blank"
             >
               <FaBehanceSquare className="text-2xl" />
+            </a>
+            <a
+              href="https://www.youtube.com/"
+              className="hover:text-lightBlue"
+              target="_blank"
+            >
+              <FaYoutube className="text-2xl" />
             </a>
           </div>
         </div>

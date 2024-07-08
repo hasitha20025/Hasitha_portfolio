@@ -9,7 +9,7 @@ export default function Experience() {
       <ExperienceCard
         title="Front-End Developer"
         company="Infact Solutions (PVT) Ltd"
-        dates="2024/04/22 - 2024/10/22"
+        dates="April/22/2024 - Oct/22/2024"
         description="I work as a Front-End Developer at Infact Solutions (PVT) Ltd, crafting efficient and dynamic web solutions."
       />
     </>

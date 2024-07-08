@@ -1,7 +1,8 @@
-import { FaLinkedin, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaFacebook} from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 const Contact = () => {
-  const whatsappNumber = "+94784375524"; // Your phone number in international format
+  
   return (
     <div className="p-8 bg-dark text-textPrimary">
       <div className="text-center mb-10">
@@ -42,13 +43,15 @@ const Contact = () => {
             >
               <FaFacebook size={24} />
             </a>
+
             <a
-              href={`https://wa.me/${whatsappNumber}`}
+              href="https://www.youtube.com/"
               className="text-lightBlue hover:text-hoverPrimary"
               target="_blank"
             >
-              <FaWhatsapp size={24} />
+              <FaYoutube size={24}  />
             </a>
+            
           </div>
         </div>
         <div className="md:w-1/2 bg-primary p-6 rounded-lg shadow-lg">

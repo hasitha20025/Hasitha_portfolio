@@ -10,7 +10,7 @@ export default function Education() {
       <ExperienceCard
         title="Uva Wellassa University of Sri Lanka"
         company="Information and communications technology"
-        dates="2021-2024"
+        dates="2022-2025"
         description="I am an graduate student at Uva Wellassa University of Sri Lanka."
       />
       <ExperienceCard

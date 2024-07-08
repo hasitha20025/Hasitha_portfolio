@@ -1,8 +1,7 @@
 import About from "./assets/about";
 import Contact from "./assets/contact";
 import Education from "./assets/education";
-import Experience from "./assets/experience";
-
+import Experience from "./assets/experience"; 
 import Footer from "./assets/footer";
 import Navbar from "./assets/navbar";
 import Projects from "./assets/projects";
