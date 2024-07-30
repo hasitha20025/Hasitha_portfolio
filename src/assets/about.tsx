@@ -1,4 +1,4 @@
-import pic from "/public/pic.jpg";
+import pic from "/pic.jpg";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaGithub } from "react-icons/fa6";
@@ -7,7 +7,7 @@ import {
   FaLinkedin,
   FaBehanceSquare,
 } from "react-icons/fa";
-
+ 
 
 export default function About() {
   const whatsappNumber = "+94784375524"; // Your phone number in international format
