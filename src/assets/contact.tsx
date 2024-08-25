@@ -1,12 +1,49 @@
-import { FaLinkedin, FaFacebook} from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import { useState } from 'react';
+import { FaLinkedin, FaFacebook, FaYoutube } from "react-icons/fa";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-  
+
+  const YOUR_SERVICE_ID = 'service_c3gqhwc';
+  const YOUR_TEMPLATE_ID = 'template_nfa53g9'; 
+  const YOUR_USER_ID = 'bLeKsABKLc4p8a6B5';
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, formData, YOUR_USER_ID)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Message sent successfully!');
+      }, (err) => {
+        console.log('FAILED...', err);
+        alert('Failed to send message. Please try again later.');
+      });
+
+    // Reset the form
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
+
   return (
     <div className="p-8 bg-dark text-textPrimary">
       <div className="text-center mb-10">
-        {/* <h2 className="text-xl font-bold">Let's Talk Now</h2> */}
         <p className="text-3xl font-bold text-center my-3 text-textPrimary mt-10">
           <span className="text-lightBlue">L</span>et's Talk
           <span className="text-lightBlue ml-2">Now</span>
@@ -32,6 +69,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/hasitha-dhananjaya-337baa226/"
               className="text-lightBlue hover:text-hoverPrimary"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedin size={24} />
             </a>
@@ -40,6 +78,7 @@ const Contact = () => {
               href="https://www.facebook.com/profile.php?id=100082554939780&mibextid=ZbWKwL"
               className="text-lightBlue hover:text-hoverPrimary"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <FaFacebook size={24} />
             </a>
@@ -48,34 +87,46 @@ const Contact = () => {
               href="https://www.youtube.com/"
               className="text-lightBlue hover:text-hoverPrimary"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <FaYoutube size={24}  />
+              <FaYoutube size={24} />
             </a>
-            
           </div>
         </div>
         <div className="md:w-1/2 bg-primary p-6 rounded-lg shadow-lg">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <input
                 type="text"
                 placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full p-3 rounded-lg bg-dark text-lightBlue border border-lightBlue"
+                required
               />
             </div>
             <div className="mb-4">
               <input
                 type="email"
                 placeholder="Email Address"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full p-3 rounded-lg bg-dark text-lightBlue border border-lightBlue"
+                required
               />
             </div>
 
             <div className="mb-4">
               <textarea
                 placeholder="Write Message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full p-3 rounded-lg bg-dark text-lightBlue border border-lightBlue"
                 rows={4}
+                required
               ></textarea>
             </div>
             <div className="text-center">

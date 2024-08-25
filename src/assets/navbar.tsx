@@ -10,7 +10,7 @@ export default function Navbar() {
         </a>
       </p>
       <div className="cursor-pointer px-4 py-2 bg-lightBlue text-primary font-bold rounded-lg hover:bg-hoverPrimary transition duration-300">
-        <a href="#">Hire Me!</a>
+        <a target="_blank" href="https://www.linkedin.com/in/hasitha-dhananjaya-337baa226/">Hire Me!</a>
       </div>
     </div>
   );
